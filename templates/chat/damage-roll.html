@@ -1,0 +1,59 @@
+<form>
+  {{#if baseFormula}}
+  <div class="form-group">
+    <label>Base Formula</label>
+    <input type="text" value="{{baseFormula}}" disabled/>
+  </div>
+  {{/if}}
+
+  {{#unless targetNames}}
+  {{#unless ignoreDefenses}}
+  <div class="form-group">
+    <label>Enemy Def./Sp. Def</label>
+    <input type="number" name="enemyDef" value="{{enemyDef}}"/>
+  </div>
+  {{/unless}}
+
+  <div class="form-group">
+    <label>Effectiveness</label>
+    <select name="effectiveness">
+        {{selectOptions effectivenessList selected=effectiveness}}
+    </select>
+  </div>
+  {{/unless}}
+
+  <div class="form-group">
+    <label title="Same-Type Attack Bonus">STAB?</label>
+    <input type="checkbox" name="stab" {{#if stab}}checked{{/if}}/>
+  </div>
+
+  <div class="form-group">
+    <label>Pain Penalization</label>
+    <select name="painPenalty">
+      {{selectOptions painPenalties selected=painPenalty}}
+     </select>
+  </div>
+
+  {{#if targetNames}}
+  <hr>
+  
+  <p>Targets: {{targetNames}}</p>
+  {{#if hasLeechHeal}}
+  <div class="form-group">
+    <label>Apply restored HP based on damage dealt</label>
+    <input type="checkbox" name="applyLeechHeal" checked/>
+  </div>
+  {{/if}}
+  {{/if}}
+
+  <hr>
+
+  <div class="form-group" title="Increases the number of rolled dice">
+      <label>Dice Pool Modifier</label>
+      <input type="number" name="poolBonus" value="0"/>
+  </div>
+  <div class="form-group" title="Added after the dice are rolled">
+    <label>Success Count Modifier</label>
+    <input type="number" name="constantBonus" value="0"/>
+  </div>
+</form>

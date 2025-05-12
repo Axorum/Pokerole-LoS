@@ -1,0 +1,74 @@
+{
+  "id": "pokerole",
+  "title": "Pokérole",
+  "description": "FoundryVTT system for Pokérole, the Pokémon role-playing game",
+  "version": "0.4.2",
+  "compatibility": {
+    "minimum": 10,
+    "verified": "12.331",
+    "maximum": 12
+  },
+  "authors": [
+    {
+      "name": "techticks"
+    }
+  ],
+  "esmodules": [
+    "module/pokerole.mjs"
+  ],
+  "styles": [
+    "css/pokerole.css"
+  ],
+  "scripts": [],
+  "packs": [
+    {
+      "name": "pokemon",
+      "label": "Pokémon (Core 2.0)",
+      "system": "pokerole",
+      "path": "./packs/pokedex.db",
+      "type": "Actor"
+    },
+    {
+      "name": "moves",
+      "label": "Moves (Core 2.0)",
+      "system": "pokerole",
+      "path": "./packs/moves.db",
+      "type": "Item"
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities (Core 2.0)",
+      "system": "pokerole",
+      "path": "./packs/abilities.db",
+      "type": "Item"
+    },
+    {
+      "name": "items",
+      "label": "Items (Core 2.0)",
+      "system": "pokerole",
+      "path": "./packs/items.db",
+      "type": "Item"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "zh-tw",
+      "name": "正體中文",
+      "path": "lang/zh-tw.json"
+    }
+  ],
+  "gridDistance": 2.5,
+  "gridUnits": "ft",
+  "primaryTokenAttribute": "hp",
+  "secondaryTokenAttribute": "will",
+  "url": "https://github.com/Pokerole-Software-Development/foundry-pokerole",
+  "manifest": "https://raw.githubusercontent.com/Pokerole-Software-Development/foundry-pokerole/main/system.json",
+  "download": "https://github.com/Pokerole-Software-Development/foundry-pokerole/releases/download/v0.4.2/foundry-pokerole-v0.4.2.zip",
+  "license": "LICENSE.txt",
+  "changelog": "CHANGELOG.md"
+}

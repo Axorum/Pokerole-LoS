@@ -1,0 +1,33 @@
+<form>
+  <div class="form-group">
+      <label>Attribute</label>
+      <input type="text" name="attribute" value="{{attribute}}" disabled/>
+  </div>
+
+  {{#if enablePainPenalty}}
+  <div class="form-group">
+    <label>Pain Penalization</label>
+    <select name="painPenalty">
+      {{selectOptions painPenalties selected=painPenalty}}
+     </select>
+  </div>
+  {{/if}}
+
+  {{#if confusionPenalty}}
+  <div class="form-group">
+    <label>Confusion (-1 success)</label>
+    <input type="checkbox" name="confusionPenalty" checked/>
+  </div>
+  {{/if}}
+
+  <hr>
+
+  <div class="form-group" title="Increases the number of rolled dice">
+      <label>Dice Pool Modifier</label>
+      <input type="number" name="poolBonus" value="0"/>
+  </div>
+  <div class="form-group" title="Added after the dice are rolled">
+    <label>Success Count Modifier</label>
+    <input type="number" name="constantBonus" value="0"/>
+</div>
+</form>

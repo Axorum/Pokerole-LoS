@@ -1,0 +1,276 @@
+{
+  "Actor": {
+    "types": [
+      "pokemon"
+    ],
+    "templates": {
+      "base": {
+        "hp": {
+          "value": 0,
+          "min": 0,
+          "max": 0
+        },
+        "will": {
+          "value": 0,
+          "min": 0,
+          "max": 2
+        },
+        "rank": "none",
+        "personality": "hardy",
+        "genre": "None",
+        "confidence": 0,
+        "baseHp": 0,
+        "actionCount": {
+          "value": 1,
+          "min": 0,
+          "max": 5
+        },
+        "canClash": true,
+        "canEvade": true,
+        "money": 0,
+        "attributes": {
+          "strength": {
+            "value": 0,
+            "min": 0,
+            "max": 12
+          },
+          "dexterity": {
+            "value": 0,
+            "min": 0,
+            "max": 12
+          },
+          "vitality": {
+            "value": 0,
+            "min": 0,
+            "max": 12
+          }
+        },
+        "social": {
+          "tough": {
+            "value": 1,
+            "min": 0,
+            "max": 5
+          },
+          "cool": {
+            "value": 1,
+            "min": 0,
+            "max": 5
+          },
+          "beauty": {
+            "value": 1,
+            "min": 0,
+            "max": 5
+          },
+          "cute": {
+            "value": 1,
+            "min": 0,
+            "max": 5
+          },
+          "clever": {
+            "value": 1,
+            "min": 0,
+            "max": 5
+          }
+        },
+        "skills": {},
+        "ailments": [],
+        "accuracyMod": {
+          "value": 0
+        },
+        "customInitiativeMod": 0,
+        "biography": "",
+        "source": "Homebrew"
+      }
+    },
+    "pokemon": {
+      "templates": [
+        "base"
+      ],
+      "battles": 0,
+      "victories": 0,
+      "tpoint": 0,
+      "pokedexId": 0,
+      "species": "",
+      "pokedexCategory": "",
+      "pokedexDescription": "",
+      "type1": "none",
+      "type2": "none",
+      "type3": "none",
+      "hasThirdType": false,
+      "height": 0,
+      "weight": 0,
+      "recommendedRank": "none",
+      "painPenalty": "none",
+      "attributes": {
+        "special": {
+          "value": 0,
+          "min": 0,
+          "max": 12
+        },
+        "insight": {
+          "value": 0,
+          "min": 0,
+          "max": 12
+        }
+      },
+      "skills": {
+        "brawl": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "channel": {
+          "value": 0,
+          "min": 0
+        },
+        "clash": {
+          "value": 0,
+          "min": 0
+        },
+        "evasion": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "alert": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "athletic": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "nature": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "stealth": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "allure": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "etiquette": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "intimidate": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        },
+        "perform": {
+          "value": 0,
+          "min": 0,
+          "max": 5
+        }
+      },
+      "extra": {
+        "happiness": {
+          "value": 2,
+          "min": 0,
+          "max": 5
+        },
+        "loyalty": {
+          "value": 2,
+          "min": 0,
+          "max": 5
+        }
+      }
+    }
+  },
+  "Item": {
+    "types": [
+      "item",
+      "move",
+      "ability",
+      "effect"
+    ],
+    "templates": {
+      "base": {
+        "description": "",
+        "source": "Homebrew"
+      }
+    },
+    "item": {
+      "templates": [
+        "base"
+      ],
+      "quantity": 1,
+      "weight": 0,
+      "price": 0
+    },
+    "ability": {
+      "templates": [
+        "base"
+      ]
+    },
+    "move": {
+      "templates": [
+        "base"
+      ],
+      "type": "none",
+      "category": "physical",
+      "target": "Foe",
+      "power": 0,
+      "accMod1": null,
+      "accMod2": null,
+      "dmgMod": null,
+      "effect": "",
+      "attributes": {
+        "accuracyReduction": 0,
+        "priority": 0,
+        "highCritical": false,
+        "lethal": false,
+        "physicalRanged": false,
+        "charge": false,
+        "mustRecharge": false,
+        "fistBased": false,
+        "soundBased": false,
+        "shieldMove": false,
+        "neverFail": false,
+        "switcherMove": false,
+        "recoil": false,
+        "rampage": false,
+        "doubleAction": false,
+        "alwaysCrit": false,
+        "destroyShield": false,
+        "successiveActions": false,
+        "userFaints": false,
+        "resetTerrain": false,
+        "resistedWithDefense": false,
+        "ignoreDefenses": false,
+        "maneuver": false
+      },
+      "heal": {
+        "type": "none",
+        "amount": 0,
+        "willPointCost": 1,
+        "target": "targets"
+      },
+      "effectGroups": [
+        {
+          "condition": {
+            "type": "none"
+          },
+          "effects": []
+        }
+      ]
+    },
+    "effect": {
+      "templates": [
+        "base"
+      ],
+      "enabled": true,
+      "rules": []
+    }
+  }
+}
